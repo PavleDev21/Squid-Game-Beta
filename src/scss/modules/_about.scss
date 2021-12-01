@@ -1,0 +1,49 @@
+.about {
+    padding-top: 125px;
+    padding-bottom: 75px;
+    .wrapper {
+        font-size: 0;
+    }
+}
+.about__text-container {
+    padding-right: 85px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+}
+.about__title {
+    margin-bottom: 15px;
+    color: $primary;
+    font-size: 45px;
+    line-height: 57px;
+    font-weight: 700;
+}
+.about__sub-title {
+    margin-bottom: 65px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $white;
+}
+.about__text {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: $white;
+}
+.about__motivation {
+    width: 75%;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: $primary;
+}
+.about__slider-container {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+}
+.about__slider {
+    height: 300px;
+}

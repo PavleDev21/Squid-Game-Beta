@@ -1,0 +1,29 @@
+.partners__title {
+    color: $white;
+    text-align: center;
+    font-size: 33px;
+    line-height: 45px;
+    margin-bottom: 85px;
+}
+.partners__cards {
+    font-size: 0;
+    text-align: center;
+}
+.partners__item {
+    display: inline-block;
+    vertical-align: middle;
+    width: 33.33%;
+    margin-bottom: 75px;
+}
+.partners__img {
+    height: 40px;
+    opacity: 0.7;
+    transition: $dur;
+    &:hover {
+        opacity: 1;
+        transition: $dur;
+    }
+}
+#easy {
+    height: 55px;
+}

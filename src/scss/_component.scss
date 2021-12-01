@@ -1,0 +1,22 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: $black;
+	font-family: $font;
+	font-weight: 400;
+	position: relative;
+	@include breakpoint(tablet) {
+		padding-top: 79px;
+	}
+	@include breakpoint(phone) {
+		padding-top: 67px;
+	}
+}
+
+p {
+	color: $black;
+}
+
+[class*='icon-'] {
+	display: inline-block;
+}
