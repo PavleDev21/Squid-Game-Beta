@@ -43,6 +43,27 @@ function glitch() {
     });
 }
 
+function faq() {
+    var $question = $('.faq__item-question');
+    var $answer = $('.faq__item-answer');
+
+    $question.each(function(i) {
+        var $this = $(this);
+        $this.attr('data-index', i);
+    })
+
+    $answer.each(function(i) {
+        var $this = $(this);
+        $this.attr('data-index', i);
+    })
+
+    $question.on('click', function() {
+        var index = $(this).data('index');
+        $('.faq__item-answer[data-index="'+ index + '"]').stop().slideToggle(250);
+    });
+}
+
 loader();
 slider();
 glitch();
+faq();
