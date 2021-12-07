@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Squid Game Beta</title>
 	<link rel="stylesheet" href="dist/css/style.css">
+	<link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon">
 </head>
 <body class="body">
 	<header class="header">
@@ -38,17 +39,12 @@
 			<div class="header__social">
 				<ul class="header__social-list">
 					<li class="header__social-item">
-						<a href="javascript:;" class="header__social-link">
-							<span class="icon-youtube"></span>
-						</a>
-					</li>
-					<li class="header__social-item">
-						<a href="javascript:;" class="header__social-link">
+						<a href="https://twitter.com/squidgamebeta" target="_blank" class="header__social-link">
 							<span class="icon-twitter"></span>
 						</a>
 					</li>
 					<li class="header__social-item">
-						<a href="javascript:;" class="header__social-link">
+						<a href="https://discord.com/invite/012P7BEh4fzkryZ83" target="_blank" class="header__social-link">
 							<span class="icon-discord"></span>
 						</a>
 					</li>
@@ -68,7 +64,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="about">
+		<div class="about js-section">
 			<div class="wrapper">
 				<div class="about__text-container">
 					<h2 class="about__title">
@@ -136,7 +132,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="features">
+		<div class="features js-section">
 			<div class="wrapper">
 				<h3 class="features__title">Features</h3>
 				<div class="features__text-container">
@@ -165,7 +161,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="gameplay">
+		<div class="gameplay js-section">
 			<div class="wrapper">
 				<h3 class="gameplay__title">Gameplay</h3>
 				<div class="gameplay__video-container">
@@ -173,13 +169,14 @@
 				</div>
 			</div>
 		</div>
-		<div class="download">
+		<div class="download js-section">
 			<div class="wrapper">
-				<h3 class="download__title">Free download<br>Registration in-game</h3>
+				<h3 class="download__title">Free download<br>In-game registration</h3>
 				<a href="" class="download__btn">Download</a>
+				<span class="download__active-players">Create an account and join 36000+ active players</span>
 			</div>
 		</div>
-		<div class="partners">
+		<div class="partners js-section">
 			<div class="wrapper">
 				<h3 class="partners__title">Our Partners</h3>
 				<div class="partners__cards">
@@ -201,29 +198,29 @@
 				</div>
 			</div>
 		</div>
-		<div class="faq">
+		<div class="faq js-section">
 			<div class="wrapper">
 				<h3 class="faq__title">FAQ</h3>
 				<div class="faq__container">
 					<div class="faq__item">
-						<p class="faq__item-question">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, doloribus?</p>
-						<p class="faq__item-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, maiores.</p>
+						<p class="faq__item-question">How do I become a player?</p>
+						<p class="faq__item-answer">The whole process is easy: download the game, make an account in the launcher, sign in and enjoy the SQB.</p>
 					</div>
 					<div class="faq__item">
-						<p class="faq__item-question">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, doloribus?</p>
-						<p class="faq__item-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, maiores.</p>
+						<p class="faq__item-question">Is there a prize for 2nd place as well?</p>
+						<p class="faq__item-answer">Winner takes everything - $20 per win.</p>
 					</div>
 					<div class="faq__item">
-						<p class="faq__item-question">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, doloribus?</p>
-						<p class="faq__item-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, maiores.</p>
+						<p class="faq__item-question">How does the withdrawal work?</p>
+						<p class="faq__item-answer">You will be able to withdraw your money after 24 hours hold. Your prize will be on hold until we review your win. We're doing this to ensure that there are no cheaters who can bypass the EAC system in our game. Current withdrawal methods are PayPal, Crypto, Google Gift Card. We'll add more.</p>
 					</div>
 					<div class="faq__item">
-						<p class="faq__item-question">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, doloribus?</p>
-						<p class="faq__item-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, maiores.</p>
+						<p class="faq__item-question">Is there a referral system?</p>
+						<p class="faq__item-answer">Yes, there is. You can invite your friends, and you'll get $1.25 per person who makes an account. There's no custom referral code. Your referral code is your SQB username.</p>
 					</div>
 					<div class="faq__item">
-						<p class="faq__item-question">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, doloribus?</p>
-						<p class="faq__item-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, maiores.</p>
+						<p class="faq__item-question">What's the point of SQB?</p>
+						<p class="faq__item-answer">The point of SQB is to build a community before we release our first-ever NFT project and to spread the word on the NFT world in general. We believe NFT is the future. Prize pools will be even higher as we expand. However, SQB is still in the beta phase, and there's much room for improvement.</p>
 					</div>
 				</div>
 			</div>
@@ -243,6 +240,14 @@
 				<div class="loader__card loader__card--back">
 					<img src="src/images/invitation-card-back.png" alt="Invitation card" class="loader__img">
 				</div>
+			</div>
+		</div>
+	</div>
+	<div class="warning">
+		<div class="wrapper">
+			<div class="warning__container">
+				<img src="src/images/logo-banner.png" alt="Squid Game Beta" class="warning__img">
+				<p class="warning__text">Squid Game Beta is currently available for PC only. Android & iOS app will be released in Q1 2022.</p>
 			</div>
 		</div>
 	</div>

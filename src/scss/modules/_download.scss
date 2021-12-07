@@ -1,7 +1,7 @@
 .download {
     padding: 75px 0;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 .download__title {
     color: $white;
@@ -27,4 +27,12 @@
         background-color: $primary;
         transition: $dur;
     }
+}
+.download__active-players {
+    margin-top: 35px;
+    display: block;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $white;
 }

@@ -7,6 +7,34 @@ function loader() {
     });
 }
 
+function nav() {
+    var $navLink = $('.header__nav-link');
+    var $section = $('.js-section');
+  
+    $navLink.each(function(i) {
+        var $this = $(this);
+        $this.attr('data-index', i);
+    });
+    $section.each(function(i) {
+        $(this).attr('data-index', i);
+    });
+  
+    $navLink.on('click', function() {
+        var index = $(this).data('index');
+        var sectionOffset = $('.js-section[data-index="'+ index + '"]').offset().top - 79;
+        $('html,body').stop().animate({scrollTop: sectionOffset}, 900);
+    });
+}
+
+function bannerBtn() {
+    var $bannerBtn = $('.hero-banner__btn');
+    var $download = $('.download');
+
+    $bannerBtn.on('click', function() {
+        var sectionOffset = $download.offset().top - 79;
+        $('html,body').stop().animate({scrollTop: sectionOffset}, 900);
+    });
+}
 
 function slider() {
     const swiper = new Swiper('.swiper', {
@@ -64,6 +92,8 @@ function faq() {
 }
 
 loader();
+nav();
+bannerBtn();
 slider();
 glitch();
 faq();
